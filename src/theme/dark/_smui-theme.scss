@@ -1,0 +1,68 @@
+@use "@material/theme/color-palette";
+
+@use "@material/theme/index" as theme with (
+  $primary: color-palette.$orange-900,
+  $secondary: color-palette.$blue-grey-50,
+  $surface: color-palette.$blue-grey-800,
+  $background: #071b23,
+  $error: color-palette.$red-700
+);
+
+@use "../app";
+
+.main-admin {
+  .content {
+    display: flex;
+    .mini-side {
+      background: #000;
+      height: 100vh;
+      width: 70px;
+      .main-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 96vh;
+        align-items: center;
+        padding: 20px;
+        border-right: 1px solid #00363d !important;
+      }
+    }
+    .sidebar {
+      background: #000;
+      border-right: 1px solid #00363d !important;
+      width: 191px;
+      .side {
+        .title {
+          border-bottom: 1px solid #00363d !important;
+          height: 2vh;
+          padding: 20px;
+        }
+        .side-item {
+          padding: 10px 20px;
+          &:hover {
+            background: rgba(255, 255, 255, 0.1);
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            width: 192px;
+            padding: 0;
+            top: 108px;
+            background: #083a45;
+            height: 1px;
+            margin-left: -20px;
+          }
+        }
+        .active {
+          color: #04b4cd;
+        }
+      }
+    }
+    .main-pages {
+      width: 100%;
+      background-color: #071b23;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@use "@material/theme/color-palette";
+
+@use "@material/theme/index" as theme with (
+  $background: #e9ecef,
+  $primary: #eb5e28,
+  $secondary: #252422,
+  $surface: #ccc5b9,
+  $on-secondary: #fffcf2,
+  $on-surface: #000
+);
+
+@use "./app";
+
+.main-admin {
+  .content {
+    display: flex;
+    .mini-side {
+      background: #fff;
+      height: 100vh;
+      width: 70px;
+      .main-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 96vh;
+        align-items: center;
+        padding: 20px;
+        border-right: 1px solid #64c5b1 !important;
+      }
+    }
+    .sidebar {
+      background: #fff;
+      border-right: 1px solid #64c5b1 !important;
+      width: 191px;
+      .side {
+        .title {
+          border-bottom: 1px solid #64c5b1 !important;
+          height: 2vh;
+          padding: 20px;
+        }
+        .side-item {
+          padding: 10px 20px;
+          &:hover {
+            background: #e9ecef;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            width: 192px;
+            padding: 0;
+            top: 108px;
+            background: #64c5b1;
+            height: 1px;
+            margin-left: -20px;
+          }
+        }
+        .active {
+          color: #04b4cd;
+        }
+      }
+    }
+    .main-pages {
+      width: 100%;
+      background-color: #e9ecef;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
