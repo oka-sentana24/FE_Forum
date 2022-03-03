@@ -1,0 +1,57 @@
+.main-input {
+  .field {
+    width: 100%;
+    height: 56px;
+    background: #000;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    .filled {
+      padding: 0px 10px;
+      color: #fff;
+      input {
+        padding-top: 34px;
+      }
+    }
+    label {
+      color: gray !important;
+    }
+    label.active {
+      color: #04b4cd !important;
+    }
+    .s-text-field__wrapper.filled input {
+      padding-top: 29px;
+    }
+    .s-text-field__wrapper:after {
+      border: none;
+    }
+    .s-text-field__wrapper:after,
+    .s-text-field__wrapper:before {
+      border-radius: 0;
+      width: 0;
+    }
+    .s-input__details {
+      div {
+        span {
+          position: absolute;
+          padding: 0px 12px;
+          margin-top: -3px;
+          color: #ff3e00 !important;
+          font-size: 12px;
+          width: 407px;
+          font-family: "Sofia Pro";
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+  .primary-text {
+    color: #04b4cd !important;
+    caret-color: #04b4cd !important;
+  }
+}
+
+.marked {
+  color: red;
+}
