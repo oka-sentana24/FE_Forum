@@ -4,10 +4,10 @@
   import Loader from '$lib/components/Loader/index.svelte';
 </script>
 <main class="auth">
-  <div class="container mx-auto">
-    <div class="flex md:flex-cols-2 md:items-center justify-center gap-10 w-full h-screen">
-      <div class="content">
-        <div class="static">
+  <div class="container mx-auto h-screen">
+    <div class='md:flex mdflex-cols-2 md:mx-5'>
+      <div class="content md:h-screen">
+        <div class="static hidden">
           <span class="title">
             Welcome to <br /> E-Forum Diskusi
             <br /> SMK NEGERI 1 GIANYAR</span
