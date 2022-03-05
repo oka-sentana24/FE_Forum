@@ -1,10 +1,3 @@
-<script>
-  import TextInput from '$lib/components/TextField/text-input.svelte';
-  import { Checkbox } from 'svelte-materialify';
-  import { mdiEyeOff, mdiEye } from '@mdi/js';
-  import { Button } from 'svelte-materialify';
-</script>
-
 <main class="content-login">
   <div class="title">
     Signin
@@ -26,3 +19,9 @@
     </div>
   </form>
 </main>
+
+<script>
+  import TextInput from '$lib/components/TextField/text-input.svelte';
+  import { Checkbox } from 'svelte-materialify';
+  import { mdiEyeOff, mdiEye } from '@mdi/js';
+</script>
