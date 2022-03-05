@@ -4,6 +4,8 @@
 
 @use "@material/theme/index" as theme;
 
+@import "./mixins";
+
 html {
   --monoFont: "Roboto Mono", monospace;
   --sansFont: "Roboto", sans-serif;
@@ -70,15 +72,176 @@ code {
   vertical-align: initial !important;
 }
 
-// .surface-lighter-bg {
-//   background-color: color.scale(theme.$surface, $lightness: +30%);
-// }
-// .surface-darker-bg {
-//   background-color: color.scale(theme.$surface, $lightness: -30%);
+.surface-lighter-bg {
+  background-color: color.scale(theme.$surface, $lightness: +30%);
+}
+.surface-darker-bg {
+  background-color: color.scale(theme.$surface, $lightness: -30%);
+}
+
+// @media (min-width: 400px) {
+//   body {
+//     font-size: 16px;
+//   }
 // }
 
-@media (min-width: 400px) {
-  body {
-    font-size: 16px;
+.main {
+  width: 100%;
+  height: 100vh;
+  .container {
+    padding: 0px 100px;
+    .content {
+      display: flex;
+      gap: 20px;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      .content-left {
+        line-height: 24px;
+        .title {
+          color: white;
+          line-height: 45px;
+          font-weight: 700;
+          font-size: 37px;
+        }
+        .desc {
+          width: 268px;
+          color: white;
+          font-size: 16px;
+          margin: 20px 0;
+          padding-bottom: 18px;
+          font-weight: 300;
+        }
+        .misi {
+          padding-top: 25px;
+          ul {
+            padding: 0px 15px;
+            margin: 2px;
+          }
+          .visi-title {
+            font-weight: 700;
+          }
+        }
+        .visi {
+          padding-top: 25px;
+          .visi-title {
+            font-weight: 700;
+          }
+        }
+      }
+      .content-right {
+        .main-card {
+          width: 465px;
+          letter-spacing: 0.9px;
+          padding: 30px;
+          background-color: #083a45;
+          .content-login {
+            .title {
+              font-size: 24px;
+              font-weight: 700;
+            }
+            .description {
+              font-size: 14px;
+              margin-top: 5px;
+              cursor: default;
+              margin-bottom: 15px;
+              span.sub {
+                color: #04b4cd;
+                font-size: 14px;
+                cursor: pointer;
+              }
+            }
+            .forgot {
+              cursor: pointer;
+              color: #0496ac;
+              padding: 6px 0;
+              font-size: 12px;
+              position: relative;
+              bottom: 10px;
+            }
+            .checkbox {
+              font-size: 14px;
+              color: white;
+              padding-bottom: 12px;
+            }
+            .submite {
+              letter-spacing: 1px;
+              font-size: 14px;
+              color: #083a45 !important;
+              background-color: #fff !important;
+              cursor: pointer;
+              border: 1px solid #0000;
+              border-radius: 3px !important;
+              padding: 0 12px;
+              height: 50px !important;
+              min-height: 50px !important;
+              margin: 0 5px 20px 0 !important;
+              width: 407px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  // background: red;
+  // normal styling code here
+
+  @include respond(tablet) {
+    .container {
+      padding: 0px 20px;
+      .content {
+        display: flex;
+        flex-direction: column;
+        .content-left {
+          visibility: hidden;
+          position: absolute;
+        }
+        .content-right {
+          .main-card {
+            width: 465px;
+            .content-login {
+              .form {
+                .submite {
+                  width: 405px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    background: green;
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    .container {
+      padding: 0px 20px;
+      .content {
+        display: flex;
+        flex-direction: column;
+        .content-left {
+          visibility: hidden;
+          position: absolute;
+        }
+        .content-right {
+          .main-card {
+            width: 341px;
+            .content-login {
+              .form {
+                .submite {
+                  width: 281px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    background: red;
+    // responsive code for mobile viewport i.e. 480px
   }
 }

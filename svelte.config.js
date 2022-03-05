@@ -1,5 +1,5 @@
-import preprocess from 'svelte-preprocess';
-import vercel from '@sveltejs/adapter-vercel';
+import preprocess from "svelte-preprocess";
+import vercel from "@sveltejs/adapter-vercel";
 
 const config = {
   preprocess: preprocess(),
@@ -7,10 +7,10 @@ const config = {
     adapter: vercel(),
     vite: {
       ssr: {
-        noExternal: [/^@material\//, /^@smui(?:-extra)?\//]
-      }
-    }
-  }
+        noExternal: [/^@material\//, /^@smui(?:-extra)?\//],
+      },
+    },
+  },
 };
 
 export default config;
