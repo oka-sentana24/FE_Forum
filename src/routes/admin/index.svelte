@@ -1,9 +1,35 @@
+<main class="main-admin">
+  <div class="header">
+    <div class="admin-content">
+      <div class="left-content">
+        <Breadcrumbs {items}/>
+      </div>
+      <div class="right-content">
+        <span>
+          <Search/>
+        </span>
+        <span>
+         <Message/>
+        </span>
+        <span>
+          <Nontifikasi/>
+        </span>
+        <span>
+          <Avatar/>
+        </span>
+      </div>
+    </div>
+    <div class="page-title">
+      Dasboard
+    </div>
+  </div>
+</main>
 <script>
-  import '../../theme/tailwind.scss'
-  import { Breadcrumbs, Avatar,Icon } from 'svelte-materialify';
-  import { mdiSearchWeb, mdiAlertCircle, mdiBellBadge } from '@mdi/js';
-  import Profile from "$lib/components/Avatar/index.svelte";
+  import Avatar from '$lib/components/Avatar/index.svelte'
+  import Nontifikasi from '$lib/components/Nontifikasi/index.svelte'
+  import Message from '$lib/components/Message/index.svelte'
   import Search from '$lib/components/Search/index.svelte'
+  import { Breadcrumbs } from 'svelte-materialify';
 
   const items = [
     { text: 'Dashboard', href: '/components/breadcrumbs/' },
@@ -11,21 +37,3 @@
     { text: 'Link 2', disabled: true },
   ];
 </script>
-<main>
-  <div class="main header mx-3">
-    <div class="flex flex-cols-md justify-between items-center">
-      <div>
-        <Breadcrumbs {items} />
-      </div>
-      <div class="flex flex-cols-2 gap-5 items-center">
-        <span><Search/></span>
-        <span><Icon path={mdiAlertCircle} /></span>
-        <span><Icon path={mdiBellBadge} /></span>
-        <span><Profile/></span>
-      </div>
-    </div>
-  </div>
-  <div class="main-title">
-    <span>Dasboard</span>
-  </div>
-</main>

@@ -10,6 +10,8 @@
 
 @use "../app";
 
+@import "../mixins";
+
 .main-admin {
   .content {
     display: flex;
@@ -63,6 +65,47 @@
       background-color: #071b23;
       position: relative;
       z-index: 1;
+      .main-admin {
+        padding: 0px 20px;
+        border-bottom: 1px solid #00363d;
+        .header {
+          .admin-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .right-content {
+              display: flex;
+              gap: 20px;
+              align-items: center;
+            }
+          }
+          .page-title {
+            width: 100%;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            padding: 0px 12px;
+          }
+        }
+      }
+      .main-section {
+        padding: 0px 20px;
+        .section-header {
+          padding: 20px 12px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
     }
+  }
+  @include respond(tablet) {
+    // background: green;
+    // responsive code for tablet viewport i.e. 600px
+  }
+
+  @include respond(mobile) {
+    // background: red;
+    // responsive code for mobile viewport i.e. 480px
   }
 }
