@@ -2,15 +2,6 @@
   <title>SvelteKit Material UI</title>
 </svelte:head>
 
-<!-- <center>
-  <ThemeButton />
-
-  <div>
-    <Button variant='unelevated'>
-      <Label>Click</Label>
-    </Button>
-  </div>
-</center> -->
 <div class="main-admin">
   <div class="content">
     <div class="mini-side">
@@ -30,4 +21,5 @@
   // import ThemeButton from '$lib/ThemeButton.svelte';
   import Miniside from '$lib/components/mini-sidebar.svelte'
   import Sidebar from '$lib/components/sidebar.svelte'
+  import Search from '$lib/components/sidebar.svelte'
 </script>

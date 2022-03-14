@@ -1,0 +1,27 @@
+.main-avatar {
+  .avatar {
+    background: red;
+    cursor: pointer;
+  }
+}
+.setting-profile {
+  position: absolute;
+  right: 20px;
+  width: 200px;
+  background: #083a45;
+  border-radius: 3px;
+  margin-top: 10px;
+  .line {
+    border-color: #04b4cd !important;
+    opacity: 0.3 !important;
+  }
+  .profile {
+    padding: 10px 20px;
+  }
+  .setting {
+    padding: 10px 20px;
+  }
+  .signout {
+    padding: 10px 20px;
+  }
+}
