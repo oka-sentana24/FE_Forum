@@ -69,5 +69,25 @@
   // ]
  let datas = [
     ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
+    ["170030299", "oka sentana", "multimedia","III", "br.roban bitera","laki-laki", "gianyar","hindu","083115427108", "test@gmail.com"],
   ]
 </script>

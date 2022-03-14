@@ -25,6 +25,7 @@
     "@material/theme": "^13.0.0",
     "@material/typography": "^13.0.0",
     "@smui/button": "^6.0.0-beta.14",
+    "@smui/data-table": "^6.0.0-beta.15",
     "@smui/icon-button": "^6.0.0-beta.14",
     "@smui/textfield": "^6.0.0-beta.14",
     "@sveltejs/adapter-vercel": "^1.0.0-next.44",

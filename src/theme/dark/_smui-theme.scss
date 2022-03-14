@@ -96,6 +96,21 @@
           justify-content: space-between;
           align-items: center;
         }
+        .mdc-data-table {
+          background-color: unset;
+          display: unset;
+          flex-direction: unset;
+          box-sizing: unset;
+          position: unset;
+          border-radius: unset;
+          border-width: unset;
+          border-style: unset;
+          border-color: unset;
+        }
+        .mdc-data-table__header-cell {
+          background-color: unset;
+          background-color: unset;
+        }
       }
     }
   }
